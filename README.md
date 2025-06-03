@@ -3,7 +3,7 @@
 Dies ist meine Umfrage-Webseite im Rahmen des FreeCodeCamp-Kurses **Responsive Web Design**.
 
 🎯 Ziel: Eine einfache Umfrage zur Gesundheit mit HTML & CSS erstellen  
-🌐 Live-Demo: [Hier ansehen](https://aribeck.github.io/Umfrage-Webseite-FFC--git/)
+🌐 Live-Demo: [Hier ansehen](https://aribeck.github.io/Umfrage-Webseite-FFC-/)
 
 ## 📁 Projektinhalte
 
