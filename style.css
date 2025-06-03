@@ -1,0 +1,120 @@
+body { text-align: center; 
+background-image: url('https://images.pexels.com/photos/4705833/pexels-photo-4705833.jpeg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: #AA55;
+color: black;
+margin: 50px auto;
+font-family: 'Roboto', sans-serif; 
+font-size: 2;
+ }
+label { 
+display: block; 
+padding: 8px; 
+margin: 1px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select, textarea { 
+width:400px; 
+display: block;
+padding: 10px; 
+border-radius: 8px; 
+border: 1px solid #ccc; 
+font-size: 1rem;
+margin: 10px auto;
+box-sizing: border-box;
+}
+form { 
+max-width: 500px; 
+margin: 50px auto; 
+padding: 30px; 
+background-color: rgba(255,255,255,0.9); 
+border-radius: 15px; 
+box-shadow: 0 0 15px rgba(0,0,0,0.3)
+}
+button {
+background-color: #e6decf; 
+color: grey;
+border: none;
+padding: 15px 40px;
+border-radius: 8px;
+font-size: 1rem;
+cursor: pointer; 
+transition: 0.3s ease;
+margin: 0px auto
+}
+button:hover { background-color: beige;
+}
+h1 { font-size: 4rem;
+font-family: 'Tuffy', sans-serif;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+}
+hr {
+  height: 5px;
+  background-color: #e6decf;
+  border: none;
+  margin: 20px 20px;
+}
+.radio-group {
+display: grid; 
+gap: 10px;
+width: 400px;
+margin: 0 auto 20px auto;
+}
+.radio-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.radio-option input[type="radio"] {
+  margin: 8px 8px;
+  padding: 10px;
+  vertical-align: middle;
+}
+.radio-sport {
+  display: grid;
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto 20px auto;
+}
+.sport-option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+}
+.sport-option input[type="radio"] {
+  margin: 8px 8px;
+  padding: 10px;
+  vertical-align: middle; 
+}
+.checkbox-group {
+  display: grid;
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto 20px auto;
+}
+.gesundheit-checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.gesundheit-checkbox input[type="checkbox"] {
+  margin: 8px 8px;
+  padding: 10px;
+  vertical-align: middle;
+}
