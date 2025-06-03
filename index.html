@@ -1,109 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="A survey form for data collection">
-    <link rel="stylesheet" href="style.css"/>
+    <meta name="description" content="Eine Umfrage zur Gesundheit">
+    <title>Gesundheitsumfrage</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Tuffy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Gesundheitsumfrage</title>
   </head>
   <body>
     <h1 id="title">Gesundheitsumfrage</h1>
-    <p id="description">Die Teilnahme an dieser Studie ist freiwillig und dient lediglich zu Studienzwecken.</p>
-   <form id="survey-form">
-    <div class="name">
-     <label for="name" id="name-label">Name
-       <input id="name" type="text" name="name" placeholder="Vor-und Nachname" required>
-     </label>
-     </div><br>
-     <div class="email">
-     <label for="email" id="email-label">Email<input id="email" type="email" name="email" placeholder="Bitte gebe deine E-mail Adresse an" required>
-     </label>
-     </div><br>
-   <div class="phone">
-     <label for="phone" id="phone-label">
-       Telefonnummer
-       <input type="tel" id="phone" name="phone" pattern="^[+0-9\s\-()]{7,20}$" placeholder="+49 123 4567890" required>
-     </label>
-   </div><br>
-   <div class="age">
-     <label for="number" id="number-label">
-       Alter
-       <input id="number" type="number" name="number" min="18" max="120" placeholder="Alter" required>
-     </label>
-   </div><br>
-     <p>Geschlecht</p>
-   <div class="dropdown-group">
-    <select id="dropdown" name="dropdown">
-      <option value="1">Männlich</option>
-      <option value="2">Weiblich</option>
-      <option value="3">Andere</option>
-    </select>
-   </div><br>
-   <hr />
-    <p>Rauchen Sie?</p>
-   <div class="radio-group">
-    <label for="ja" id="ja-label" class="radio-option">
-    <input id="ja" type="radio" value="1" name="rauchen" required>
-    Ja
-    </label>
-    <label for="nein" id="nein-label" class="radio-option">
-    <input id="nein" type="radio" value="2" name="rauchen" required>
-    Nein
-    </label>
-   </div><br>
-   <p>Wie oft treiben Sie pro Woche Sport?</p>
-   <div class="radio-sport">
-     <label for="gar-nicht" id="gar-nicht-label" class="sport-option">
-       <input id="gar-nicht" type="radio" value="Gar nicht" name="sport" required>
-       Gar nicht
-     </label>
-     <label for="manchmal" id="manchmal-label" class="sport-option">
-       <input id="manchmal" type="radio" value="1-2 Mal" name="sport"required>
-       1-2 Mal
-     </label>
-     <label for="oft" id="oft-label" class="sport-option">
-       <input id="oft" type="radio" value="3-5 Mal" name="sport" required>
-       3-5 Mal
-     </label>
-     <label for="immer" id="immer-label" class="sport-option">
-       <input id="immer" type="radio" value="Täglich" name="sport" required>
-       Täglich
-     </label>
-    </div><br>
-   <div class="checkbox-group">
-     <p>Welche der folgenden Aussagen, treffen auf Sie zu?</p>
-   <label for="gesundheit-ernaehrung" id="ernaehrung-label" class="gesundheit-checkbox">
-      <input id="gesundheit-ernaehrung" type="checkbox" value="ernaehrung" name="gesundheit">
-      Ich achte auf eine ausgewogene Ernährung
-    </label>
-    <label for="gesundheit-arztbesuche" id="arzbesuche-label" class="gesundheit-checkbox">
-      <input id="gesundheit-arztbesuche" type="checkbox" value="arztbesuche" name="gesundheit">
-      Ich gehe regelmäßig zu Vorsorgeuntersuchungen
-    </label>
-    <label for="gesundheit-schlaf" id="schlaf-label" class="gesundheit-checkbox">
-      <input id="gesundheit-schlaf" type="checkbox" value="schlaf" name="gesundheit">
-      Ich achte auf ausreichend Schlaf
-    </label>
-    <label for="gesundheit-stress" id="stress-label" class="gesundheit-checkbox">
-      <input id="gesundheit-stress" type="checkbox" value="stress" name="gesundheit">
-      Ich versuche, Stress aktiv abzubauen
-    </label>
-    <label for="gesundheit-keines" id="keines-label" class="gesundheit-checkbox">
-      <input id="gesundheit-keines" type="checkbox" value="keines" name="gesundheit">
-      Keine der oben genannten Aussagen trifft zu
-    </label>
-   </div><br>
-   <hr />
-   <div class="textarea">
-     <p>Haben Sie momentan gesundheitliche Beschwerden oder Bedenken?</p>
-    <textarea name="message" rows="4" cols="50" placeholder="Schreibe hier deinen Text"></textarea>
-    <label for="submit" id="submit-label">
-   </div>
-    <button id="submit" type="submit" value="Submit" name="submit">Einreichen</button>
-    </label>
-   </form>
+    <p id="description">Die Teilnahme an dieser Studie ist freiwillig und dient nur Studienzwecken.</p>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Vor- und Nachname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">E-Mail</label>
+        <input id="email" type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone" id="phone-label">Telefonnummer</label>
+        <input type="tel" id="phone" name="phone" pattern="^[+0-9\\s\\-()]{7,20}$" placeholder="+49 123 4567890" required>
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Alter</label>
+        <input id="number" type="number" name="number" min="18" max="120" placeholder="Alter" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">Geschlecht</label>
+        <select id="dropdown" name="dropdown">
+          <option value="1">Männlich</option>
+          <option value="2">Weiblich</option>
+          <option value="3">Andere</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <p>Rauchen Sie?</p>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input id="ja" type="radio" value="1" name="rauchen" required> Ja
+        </label>
+        <label class="radio-option">
+          <input id="nein" type="radio" value="2" name="rauchen" required> Nein
+        </label>
+      </div>
+
+      <p>Wie oft treiben Sie pro Woche Sport?</p>
+      <div class="radio-sport">
+        <label class="sport-option">
+          <input type="radio" value="Gar nicht" name="sport" required> Gar nicht
+        </label>
+        <label class="sport-option">
+          <input type="radio" value="1-2 Mal" name="sport" required> 1–2 Mal
+        </label>
+        <label class="sport-option">
+          <input type="radio" value="3-5 Mal" name="sport" required> 3–5 Mal
+        </label>
+        <label class="sport-option">
+          <input type="radio" value="Täglich" name="sport" required> Täglich
+        </label>
+      </div>
+
+      <div class="checkbox-group">
+        <p>Welche Aussagen treffen auf Sie zu?</p>
+        <label class="gesundheit-checkbox">
+          <input type="checkbox" value="ernaehrung" name="gesundheit">
+          Ich achte auf eine ausgewogene Ernährung
+        </label>
+        <label class="gesundheit-checkbox">
+          <input type="checkbox" value="arztbesuche" name="gesundheit">
+          Ich gehe regelmäßig zu Vorsorgeuntersuchungen
+        </label>
+        <label class="gesundheit-checkbox">
+          <input type="checkbox" value="schlaf" name="gesundheit">
+          Ich achte auf ausreichend Schlaf
+        </label>
+        <label class="gesundheit-checkbox">
+          <input type="checkbox" value="stress" name="gesundheit">
+          Ich versuche, Stress aktiv abzubauen
+        </label>
+        <label class="gesundheit-checkbox">
+          <input type="checkbox" value="keines" name="gesundheit">
+          Keine der oben genannten Aussagen trifft zu
+        </label>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <p>Haben Sie momentan gesundheitliche Beschwerden oder Bedenken?</p>
+        <textarea name="message" rows="4" placeholder="Schreibe hier deinen Text"></textarea>
+      </div>
+
+      <button id="submit" type="submit">Einreichen</button>
+    </form>
   </body>
 </html>
