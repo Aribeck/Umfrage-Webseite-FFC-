@@ -9,6 +9,7 @@ Dies ist meine Umfrage-Webseite im Rahmen des FreeCodeCamp-Kurses **Responsive W
 
 - HTML5 Struktur
 - Responsives Design mit CSS
+- Barrierefreies Design (a11y)
 - Eingabefelder für Name, E-Mail, Telefonnummer und Alter
 - Einfache Gestaltung mit Google Fonts
 
